@@ -139,27 +139,27 @@
 
     .no-touch &:hover {
       .item-button-inner {
-        background-color: @button-color-hover;
+        background-color: @btn-color-hover;
       }
     }
 
     &[disabled="disabled"] {
       .item-button-inner {
-        background-color: @button-color-disabled;
-        color: @button-text-color-disabled;
+        background-color: @disabled;
+        color: @disabled-inverted;
         cursor: default;
 
         .no-touch &:hover {
-          background-color: @button-color-disabled;
-          color: @button-text-color-disabled;
+          background-color: @disabled;
+          color: @disabled-inverted;
         }
       }
     }
   }
 
   .item-button-inner {
-    background-color: @button-color;
-    color: @button-text-color;
+    background-color: @btn-color;
+    color: @btn-color-inverted;
     display: block;
     margin: 0 5px;
     padding: 10px;
@@ -173,7 +173,7 @@
       .block-inner {
         // Added padding for arrow navigation
         @media all and (min-width: @device-width-medium) {
-          padding: @block-padding-top 70px 0;
+          padding: @block-padding-ver 70px 0;
         }
 
         // Removed arrow navigation padding
@@ -196,7 +196,7 @@
 
   // Arrow Buttons
   .item-button-arrow {
-    background-color: @button-color;
+    background-color: @btn-color;
     display: block;
     height: (@icon-size*2.5);
     margin-top: -(@icon-size*1.25);
@@ -207,26 +207,26 @@
     z-index: 10;
 
     .icon {
-      color: @button-text-color;
+      color: @btn-color-inverted;
       font-size: (@icon-size*1.25);
       font-weight: bold;
       margin: (@icon-size/1.5);
     }
 
     .no-touch &:hover {
-      background-color: @button-color-hover;
+      background-color: @btn-color-hover;
 
       .icon {
-        color: @button-text-color-hover;
+        color: @btn-color-inverted-hover;
       }
     }
 
     &[disabled="disabled"] {
-      background-color: @button-color-disabled;
+      background-color: @disabled;
       cursor: default;
 
       .no-touch &:hover {
-        background-color: @button-color-disabled;
+        background-color: @disabled;
       }
     }
 
@@ -244,7 +244,7 @@
       .block-inner {
         // Added padding for arrow navigation
         @media all and (min-width: @device-width-medium) {
-          padding: @block-padding-top 70px 0;
+          padding: @block-padding-ver 70px 0;
         }
       }
     }
